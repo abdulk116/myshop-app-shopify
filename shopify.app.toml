@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "a5e848ccff7766a80c848ad4f89599e9"
+name = "myshop-app"
+handle = "myshop-app-7"
+application_url = "https://americans-mexico-vincent-maria.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-b8732482.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://americans-mexico-vincent-maria.trycloudflare.com/auth/callback",
+  "https://americans-mexico-vincent-maria.trycloudflare.com/auth/shopify/callback",
+  "https://americans-mexico-vincent-maria.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
